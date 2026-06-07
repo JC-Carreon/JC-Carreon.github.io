@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="stylesheet" href="assets/CSS/style.css">
+  </head>
+
+  <body>
+
+    <div class="portfolio">
+
+      <nav>
+        <span class="nav-logo">JC · Portfolio</span>
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">About</a></li>
+          <li><a href="My Resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <div>
+          <p class="hero-eyebrow">Fresh It Graduate · Cavite, PH</p>
+          <h1>Building<br>things that<br><span
+              class="highlight">matter.</span></h1>
+          <p class="hero-bio">I craft thoughtful, performant software — from
+            elegant back-end systems to refined user
+            interfaces.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="#work">View my work</a>
+            <a class="btn-ghost" href="My Resume.pdf" target="_blank">Resume <i class="ti ti-arrow-right"
+                aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-inner"></div>
+          <div class="avatar-tag">Available for hire</div>
+        </div>
+      </section>
+
+      <section class="skills-section">
+        <p class="section-label">Expertise</p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-code"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">Frontend</p>
+            <p class="skill-desc">JavaScript · HTML · CSS · Bootstrap</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-server"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">Backend</p>
+            <p class="skill-desc">Node.js · PHP</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-database"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">Data & Infra</p>
+            <p class="skill-desc">MySQL · Access</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-git-branch"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">DevOps</p>
+            <p class="skill-desc">GitHub Actions</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-device-mobile"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">Mobile</p>
+            <p class="skill-desc">None at the moment</p>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="ti ti-brain"
+                aria-hidden="true"></i></div>
+            <p class="skill-name">AI / ML</p>
+            <p class="skill-desc">None at the moment</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="projects-section">
+        <p class="section-label">Selected Work</p>
+
+        <div class="project-card">
+          <div>
+            <p class="project-tag">Capstone Project · Full-Stack</p>
+            <p class="project-name">labAMS (Inventory Management System)</p>
+            <p class="project-desc">Designed a web-based system for laboratory
+              equipment using PHP, JavaScript, and MySQL
+              and Implemented QR code tracking, real-time status updates, and
+              user role management.
+              .</p>
+            <div class="project-stack">
+              <span class="stack-pill">JavaScript</span>
+              <span class="stack-pill">PHP</span>
+              <span class="stack-pill">CSS</span>
+              <span class="stack-pill">MySQL</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-year">2025</span>
+            <!-- PROJECT LINK -->
+            <a class="project-link" href="#" onclick="openGallery(event, 'labams')" title="View project">
+              <i class="ti ti-external-link"></i>
+            </a>
+          </div>
+          </div>
+          
+          <div class="project-card">
+            <div>
+              <p class="project-tag">Website</p>
+              <p class="project-name">JJC Restaurant Web Application</p>
+              <p class="project-desc">Developed a restaurant website with an online table reservation and booking system, and
+                Designed a user-friendly interface to improve customer engagement and reservation management.
+              </p>
+              <div class="project-stack">
+                <span class="stack-pill">JavaScript</span>
+                <span class="stack-pill">PHP</span>
+                <span class="stack-pill">CSS</span>
+                <span class="stack-pill">MySQL</span>
+              </div>
+            </div>
+            <div class="project-meta">
+              <span class="project-year">2024</span>
+              <a class="project-link" href="#" onclick="openGallery(event, 'jjc')" title="View project">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="project-card">
+          <div>
+            <p class="project-tag">WordPress Website</p>
+            <p class="project-name">Solarmaxx.ph</p>
+            <p class="project-desc">E-commerce website, enabling customers to
+              browse and purchase solar panel products
+              online.</p>
+            <div class="project-stack">
+              <span class="stack-pill">WordPress</span>
+              <span class="stack-pill">Plugins</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-year">2025</span>
+            <a class="project-link" target="_blank" href="https://solarmaxx.ph/"
+              title="View project"><i
+                class="ti ti-external-link" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div>
+            <p class="project-tag">WordPress Website</p>
+            <p class="project-name">Townsdelight.com</p>
+            <p class="project-desc">A WordPress-based website with an integrated
+              e-commerce platform for online product
+              sales.</p>
+            <div class="project-stack">
+              <span class="stack-pill">WordPress</span>
+              <span class="stack-pill">Plugins</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-year">2025</span>
+            <a class="project-link" target="_blank"
+              href="https://townsdelight.com/" title="View project"><i
+                class="ti ti-external-link" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="exp-section">
+        <p class="section-label">Experience</p>
+        <div class="exp-item">
+          <span class="exp-period">2025 — Present</span>
+          <div>
+            <p class="exp-role">Sales Staff</p>
+            <p class="exp-company">AJGPH · Imus, Cavite</p>
+            <p class="exp-desc">Leveraged customer service skills to drive sales and resolve client inquiries in a fast-paced
+              retail environment. Managed inventory tracking and provided product demonstrations, ensuring high client
+              satisfaction.
+              </p>
+              </div>
+              </div>
+              <div class="exp-item">
+                <span class="exp-period">2025 — 2025</span>
+                <div>
+                  <p class="exp-role">Wordpress Developer</p>
+                  <p class="exp-company">SpinDiv Kinetics · Remote</p>
+                  <p class="exp-desc">Developed and maintained WordPress websites and integrated responsive, SEO-friendly designs.
+                    Customized themes and plugins using PHP and CSS.
+                  </p>
+                </div>
+              </div>
+              <div class="exp-item">
+                <span class="exp-period">2018 — 2020</span>
+                <div>
+            <p class="exp-role">IT Intern</p>
+            <p class="exp-company">Elijah Hotel and Residences  · Dasma</p>
+            <p class="exp-desc">Resolved hardware/software issues and assisted in network troubleshooting and system maintenance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div>
+          <p class="contact-heading">Let's build together.</p>
+          <p class="contact-sub">Open to full-time roles & freelance
+            projects</p>
+        </div>
+        <!-- Replace href with your actual email -->
+        <a class="btn-dark" href="mailto:your@email.com">Get in touch</a>
+      </section>
+
+      <footer>
+        <span class="footer-text">© 2026 Jhon Carlos Careon</span>
+        <div class="social-links">
+          <!-- Replace # with your actual profile URLs -->
+          <a href="https://github.com/JC-Carreon" target="_blank" title="GitHub"><i class="ti ti-brand-github"
+              aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/jhon-carlos-carreon-213a1238a" target="_blank" title="LinkedIn"><i class="ti ti-brand-linkedin"
+              aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/jc.flare" target="_blank" title="Instagram"><i class="ti ti-brand-instagram"
+              aria-hidden="true"></i></a>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- GALLERY MODAL -->
+    <div class="gallery-modal" id="galleryModal">
+      <span class="close-gallery" onclick="closeGallery()">&times;</span>
+
+      <button class="gallery-btn prev" onclick="changeImage(-1)">❮</button>
+
+      <div class="gallery-content">
+        <img id="galleryImage" src alt="Project Image">
+      </div>
+
+      <button class="gallery-btn next" onclick="changeImage(1)">❯</button>
+    </div>
+
+  </body>
+
+  <script>
+  // Multiple galleries
+  const galleries = {
+    labams: [
+      "assets/images/LABAMS1.jpg",
+      "assets/images/LABAMS2.jpg",
+      "assets/images/LABAMS3.jpg",
+      "assets/images/LABAMS4.jpg",
+      "assets/images/LABAMS5.jpg",
+      "assets/images/LABAMS6.jpg",
+      "assets/images/LABAMS7.jpg",
+      "assets/images/LABAMS8.jpg",
+      "assets/images/LABAMS9.jpg",
+      "assets/images/LABAMS10.jpg",
+      "assets/images/LABAMS11.jpg",
+      "assets/images/LABAMS12.jpg",
+      "assets/images/LABAMS13.jpg",
+      "assets/images/LABAMS14.jpg",
+      "assets/images/LABAMS15.jpg",
+    ],
+
+    jjc: [
+      "assets/images/JJC1.png",
+      "assets/images/JJC2.png",
+      "assets/images/JJC3.png",
+      "assets/images/JJC4.png",
+      "assets/images/JJC5.png",
+      "assets/images/JJC6.png",
+      "assets/images/JJC7.png",
+      "assets/images/JJC8.png"
+    ]
+  };
+
+  let currentGallery = [];
+  let currentImageIndex = 0;
+
+  // Open gallery modal
+  function openGallery(event, galleryName) {
+    event.preventDefault();
+
+    currentGallery = galleries[galleryName];
+
+    if (!currentGallery || currentGallery.length === 0) {
+      console.error("Gallery not found:", galleryName);
+      return;
+    }
+
+    currentImageIndex = 0;
+
+    document.getElementById("galleryImage").src =
+      currentGallery[currentImageIndex];
+
+    document.getElementById("galleryModal").style.display = "flex";
+  }
+
+  // Close gallery
+  function closeGallery() {
+    document.getElementById("galleryModal").style.display = "none";
+  }
+
+  // Next / Previous
+  function changeImage(direction) {
+    currentImageIndex += direction;
+
+    if (currentImageIndex < 0) {
+      currentImageIndex = currentGallery.length - 1;
+    }
+
+    if (currentImageIndex >= currentGallery.length) {
+      currentImageIndex = 0;
+    }
+
+    document.getElementById("galleryImage").src =
+      currentGallery[currentImageIndex];
+  }
+</script>
+
+</html>
