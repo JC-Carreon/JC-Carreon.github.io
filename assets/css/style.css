@@ -475,56 +475,172 @@
       line-height: 1.8;
   }
 
-  /* CONTACT */
-  .contact-section {
-      background: var(--accent);
-      padding: 3.5rem;
-      display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: center;
-      gap: 2rem;
-      margin-bottom: 0;
-  }
+ /* CONTACT */
+ .contact-wrap {
+     background: var(--accent);
+     padding: 3rem 3.5rem;
+ }
 
-  .contact-heading {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
-      letter-spacing: 0.06em;
-      font-weight: 400;
-      color: var(--bg);
-      line-height: 1;
-      margin-bottom: 0.4rem;
-  }
+ .contact-top {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-wrap: wrap;
+     gap: 1.5rem;
+     margin-bottom: 2.5rem;
+ }
 
-  .contact-sub {
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      color: var(--bg);
-      letter-spacing: 0.12em;
-      opacity: 0.65;
-  }
+ .contact-heading {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 2.8rem;
+     color: var(--bg);
+     line-height: 1;
+     margin-bottom: 0.3rem;
+     letter-spacing: 0.04em;
+ }
 
-  .btn-dark {
-      font-family: 'DM Mono', monospace;
-      font-size: 11px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--bg);
-      border: none;
-      padding: 0.9rem 2rem;
-      text-decoration: none;
-      cursor: pointer;
-      white-space: nowrap;
-      border-radius: 2px;
-      transition: background 0.2s;
-      font-weight: 500;
-  }
+ .contact-sub {
+     font-family: 'DM Mono', monospace;
+     font-size: 11px;
+     color: var(--bg);
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     opacity: 0.6;
+ }
 
-  .btn-dark:hover {
-      background: var(--bg-3);
-  }
+ .contact-status {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     background: var(--bg);
+     padding: 8px 16px;
+     border-radius: 2px;
+     align-self: flex-start;
+ }
 
+ .status-dot {
+     width: 7px;
+     height: 7px;
+     border-radius: 50%;
+     background: var(--accent);
+     animation: pulse 2s infinite;
+ }
+
+ .status-text {
+     font-family: 'DM Mono', monospace;
+     font-size: 10px;
+     letter-spacing: 0.16em;
+     text-transform: uppercase;
+     color: var(--accent);
+ }
+
+ @keyframes pulse {
+
+     0%,
+     100% {
+         opacity: 1;
+     }
+
+     50% {
+         opacity: 0.4;
+     }
+ }
+
+ .contact-divider {
+     height: 0.5px;
+     background: rgba(12, 12, 12, 0.2);
+     margin-bottom: 2rem;
+ }
+
+ .contact-info {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 1px;
+     background: rgba(12, 12, 12, 0.15);
+ }
+
+ .contact-item {
+     background: var(--accent);
+     padding: 1.25rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 14px;
+     text-decoration: none;
+     transition: background 0.2s;
+ }
+
+ .contact-item:hover {
+     background: var(--accent-dim);
+ }
+
+ .contact-icon {
+     font-size: 22px;
+     color: var(--bg);
+     flex-shrink: 0;
+ }
+
+ .contact-label {
+     font-family: 'DM Mono', monospace;
+     font-size: 9px;
+     letter-spacing: 0.18em;
+     text-transform: uppercase;
+     color: rgba(12, 12, 12, 0.55);
+     margin-bottom: 3px;
+ }
+
+ .contact-value {
+     font-family: 'DM Mono', monospace;
+     font-size: 13px;
+     font-weight: 500;
+     color: var(--bg);
+     letter-spacing: 0.04em;
+ }
+
+ .contact-footer {
+     margin-top: 2rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 1rem;
+ }
+
+ .social-row {
+     display: flex;
+     gap: 12px;
+ }
+
+ .social-btn {
+     width: 36px;
+     height: 36px;
+     border: 1px solid rgba(12, 12, 12, 0.3);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: var(--bg);
+     text-decoration: none;
+     font-size: 17px;
+     border-radius: 2px;
+     transition: background 0.2s;
+ }
+
+ .social-btn:hover {
+     background: rgba(12, 12, 12, 0.1);
+ }
+
+ .copy-hint {
+     font-family: 'DM Mono', monospace;
+     font-size: 9px;
+     letter-spacing: 0.14em;
+     text-transform: uppercase;
+     color: rgba(12, 12, 12, 0.45);
+ }
+
+ @media (max-width: 640px) {
+     .contact-info {
+         grid-template-columns: 1fr;
+     }
+ }
   /* FOOTER */
   footer {
       display: flex;
@@ -622,6 +738,7 @@
 .next {
     right: 20px;
 }
+
 
   /* RESPONSIVE */
   @media (max-width: 640px) {
